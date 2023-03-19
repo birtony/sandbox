@@ -59,9 +59,7 @@ resources:
 transformers:
 - sedtransform.yml
 
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
 images:
 - name: sandbox-cli
   newName: ghcr.io/trustbloc-cicd/sandbox-cli
-  newTag: 0.1.9-snapshot-c331ad4
+  newTag: 0.1.9-snapshot-bc094bb

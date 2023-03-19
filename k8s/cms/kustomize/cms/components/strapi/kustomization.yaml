@@ -9,7 +9,7 @@ kind: Component
 images:
 - name: strapi
   newName: ghcr.io/trustbloc-cicd/sandbox-cms
-  newTag: 0.1.9-snapshot-c331ad4
+  newTag: 0.1.9-snapshot-bc094bb
 
 secretGenerator:
 - envs:
@@ -23,9 +23,6 @@ configMapGenerator:
 - files:
   - bootstrap.js
   name: strapi-bootstrap
-
-apiVersion: kustomize.config.k8s.io/v1alpha1
-kind: Component
 
 resources:
 - deployment.yml
